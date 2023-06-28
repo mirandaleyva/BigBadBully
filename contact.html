@@ -23,17 +23,48 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="dogs.html">Dogs</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dogs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="dogs-male.html">Males</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="dogs-female.html">Females</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="dogs-litters.html">Litters</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                FAQ's
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="dogs-care.html">Dog care Tips</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="adoption-program.html">Adoption program</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="litters.html">Litters</a>
+                            <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="aboutus.html">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                     <span class="navbar-text">
@@ -46,8 +77,13 @@
     </header>
     <main class="container mt-100px">
         <section class="contact">
-            <h2>Contact</h2>
+            <h1 class="text-center">Contact</h1><br><br>
             <form class="row g-3">
+                <h2>location</h2>
+                <p>Via Tommaso Campanella, 4R, 16146 Genova GE, Italy <br></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d847.5854472076675!2d8.966932616300571!3d44.39363549025078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d343a9c302c141%3A0xbb062eb388e504bc!2sCAMPANELLA%20tennis%26calcetto!5e0!3m2!1sde!2sch!4v1687955930941!5m2!1sde!2sch" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <hr><br><br>
+            <h2>contact form</h2>
                 <div class="col-md-6">
                     <label for="inputFirstName" class="form-label">First Name</label>
                     <input type="text" class="form-control" id="inputFirstName" placeholder="Max" required min="2"
@@ -153,16 +189,12 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
-    <script src="app.js"></script>
 </body>
 
 </html>

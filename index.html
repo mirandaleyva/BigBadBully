@@ -11,25 +11,56 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<!--Hier fangt mein body an-->
+<!--Hier fängt mein body an-->
 
 <body>
   <header>
     <!--Das hier ist den Navbar für die Seite-->
     <nav class="navbar bg-dark navbar-expand-lg fixed-top" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Home</a>
+        <a class="navbar-brand" href="#">Home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="dogs.html">Dogs</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dogs
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="dogs-male.html">Males</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="dogs-female.html">Females</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="dogs-litters.html">Litters</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                FAQ's
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="dogs-care.html">Dog care Tips</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="adoption-program.html">Adoption program</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="litters.html">Litters</a>
+              <a class="nav-link" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="aboutus.html">About us</a>
@@ -45,32 +76,33 @@
       </div>
     </nav>
     <!-- Hier ist das Container mit den Bilder vom Header / Carousel-->
-    <div id="carouselDogsMain" class="carousel slide carousel-fade mt-5">
+    <div id="carouselDogsMain" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/peakpx.jpg" class="d-block w-100" alt="" style="max-height:900px">
+          <img src="img/dogs/peakpx.jpg" class="d-block w-100" alt="" style="max-height:900px">
           <div class="carousel-caption d-none d-md-block">
             <h1>Big Bad Bully</h1>
             <p>The strength of a bull, the heart of a puppy</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/merle de verdad.jpg" class="d-block w-100" alt="..." style="max-height:900px">
+          <img src="img/dogs/merle-de-verdad.jpg" class="d-block w-100" alt="..." style="max-height:900px">
           <div class="carousel-caption d-none d-md-block">
             <h1>Big Bad Bully</h1>
             <p>The strength of a bull, the heart of a puppy</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/peakpx (3).jpg" class="d-block w-100" alt="..." style="max-height:900px">
+          <img src="img/dogs/peakpx-3.jpg" class="d-block w-100" alt="..." style="max-height:900px">
           <div class="carousel-caption d-none d-md-block">
             <h1>Big Bad Bully</h1>
             <p>The strength of a bull, the heart of a puppy</p>
           </div>
         </div>
       </div>
+    </div>
       <!--Hier sind die option zum vorwärst und rückwärst klicken mit dem Carousel-->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDogsMain" data-bs-slide="prev">
+    <!--  <button class="carousel-control-prev" type="button" data-bs-target="#carouselDogsMain" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
@@ -78,7 +110,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </div>-->
   </header>
   <main>
     <!--Das Hier ist die Section mit einem Text und das Logo der Webseite-->
@@ -111,11 +143,9 @@
       <h1 class="testimonials">Testimonials</h1>
       <div class="row">
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-          </svg>
+          <img src="img/testimonials/puppy-blanco.png" alt="" width="140" height="140" class="bd-placeholder-img rounded-circle">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" ></rect>
+        
           <h2 class="fw-normal">Sarah M.</h2>
           <p>"I couldn't be happier with my American Bully XL from Big Bad Bully! From the moment I saw him, I knew he
             was the perfect companion for me. He is incredibly affectionate and loyal, always ready to play. The kennel
@@ -123,11 +153,10 @@
             support I needed. I highly recommend Big Bad Bully to anyone looking for an exceptional quality dog."</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <img src="img/testimonials/Gabos-Pitbull.png" alt="" width="140" height="140" class="bd-placeholder-img rounded-circle">
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-          </svg>
+          
           <h2 class="fw-normal">John F.</h2>
           <p>"Getting an American Bully XL from Big Bad Bully has been the best decision I've made. From day one, it has
             been evident the dedication and care the kennel puts into their dogs. My Bully XL is athletic, muscular, and
@@ -136,11 +165,10 @@
           </p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <img src="img/testimonials/cachorro-2.png" alt="" width="140" height="140" class="bd-placeholder-img rounded-circle">
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-          </svg>
+          
           <h2 class="fw-normal">Emily W.</h2>
           <p>"Big Bad Bully has exceeded all my expectations. When I adopted my American Bully XL, I was impressed by
             the quality and beauty of the dogs at the kennel. They have proven to be excellent family companions,
@@ -148,7 +176,8 @@
             questions and provide guidance. If you're looking for a high-quality American Bully XL, look no further than
             Big Bad Bully."</p>
         </div><!-- /.col-lg-4 -->
-      </div>
+      </div><!-- //.row -->
+      </div><!-- //.marketing -->
   </main>
   <!--Hier ist der Footer von der Seite-->
   <hr>
@@ -221,16 +250,12 @@
     </footer>
   </div>
   <!--Das Hier ist der JavaScript-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-    crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+  integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+  integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+  crossorigin="anonymous"></script>
   <!--Ende JavaScript-->
 </body>
 <!--Hier endet mein body-->

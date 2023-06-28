@@ -19,3 +19,49 @@
 .testimonials {
     margin-bottom: 50px;
 }
+
+.img-males{
+    max-width: 42ex;
+}
+
+#gallery .col-lg-4{
+    margin: 0 !important;
+    padding: 25px;
+}
+
+#gallery img{
+    width: 100%;
+    height: 300px;
+}
+
+#gallery img:hover{
+    border: 5px solid #f7f7f7;
+}
+
+#litters .col-lg-4{
+    margin: 0 !important;
+    padding: 25px;
+}
+
+#litters img{
+    width: 100%;
+    height: 300px;
+}
+
+#litters img:hover{
+    border: 5px solid #f7f7f7;
+}
+
+@media only screen and (min-width: 576px) {
+    /* Para pantallas grandes a partir de un movil en vertical */
+    #carouselDogsMain {
+        margin-top: 92px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    /* Para moviles en modo vertical */
+    #carouselDogsMain {
+        margin-top: 56px;
+    }
+}
