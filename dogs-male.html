@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body id="bodymale">
   <header>
     <nav class="navbar bg-dark navbar-expand-lg fixed-top" data-bs-theme="dark">
       <div class="container-fluid">
@@ -73,12 +73,19 @@
         </div>
       </div>
     </nav>
-    <div class="hero text-center">
-      <h1>Big Bad Bully</h1>
-      <p>The strength of a bull, the heart of a puppy</p>
-    </div>
   </header>
   <hr>
+  <div class="video-container">
+    <video src="img/videos/Bossy Kennels Perris Event - AeroViews (1080p, h264).mp4" type="video/mp4" autoplay loop
+      muted>
+      Your browser does not support video
+    </video>
+  </div>
+  <div id="titledog" class="hero">
+    <h1>Big Bad Bully</h1>
+    <h3>our males selection</h3>
+  </div>
+  <br><br><br><br>
   <div class="container-fluid">
     <div class="row">
       <h1 class="text-center">Morhp</h1>
@@ -87,10 +94,8 @@
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#dogAccordion1" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#dogAccordion1" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#dogAccordion1" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#dogAccordion1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#dogAccordion1" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -103,28 +108,26 @@
               <img src="img/dogs/morpheus-side-sml.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#dogAccordion1"
-            data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#dogAccordion1" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#dogAccordion1"
-            data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#dogAccordion1" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
       </div>
       <div class="col-12 col-md">
-        <div class="accordion accordion-flush" id="accordionFlus">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                data-bs-target="#flush-collapseOneOne" aria-expanded="false" aria-controls="flush-collapseOneOne">
                 Technical info
               </button>
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlush1">
+            <div id="flush-collapseOneOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
                 Weight (kg)
                 <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="60"
@@ -150,28 +153,36 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                data-bs-target="#flush-collapseTwoOne" aria-expanded="false" aria-controls="flush-collapseTwoOne">
                 Accordion Item #2
               </button>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlush1">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
-                filled with some actual content.</div>
+            <div id="flush-collapseTwoOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                demonstrate the
+                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                imagine this being
+                filled with some actual content.
+              </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                data-bs-target="#flush-collapseThreeOne" aria-expanded="false" aria-controls="flush-collapseThreeOne">
                 Accordion Item #3
               </button>
             </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlush1">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-                happening here in terms of content, but just filling up the space to make it look, at least at first
-                glance, a bit more representative of how this would look in a real-world application.</div>
+            <div id="flush-collapseThreeOne" class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                demonstrate the
+                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing
+                more exciting
+                happening here in terms of content, but just filling up the space to make it look, at
+                least at first
+                glance, a bit more representative of how this would look in a real-world application.
+              </div>
             </div>
           </div>
         </div>
@@ -187,12 +198,9 @@
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#dogAccordion2" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#dogAccordion2" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#dogAccordion2" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#dogAccordion2" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#dogAccordion2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#dogAccordion2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#dogAccordion2" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -208,13 +216,11 @@
               <img src="img/dogs/GRIMLOCK6-sml.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#dogAccordion2"
-            data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#dogAccordion2" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#dogAccordion2"
-            data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#dogAccordion2" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -225,11 +231,11 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                data-bs-target="#flush-collapseOneTwo" aria-expanded="false" aria-controls="flush-collapseOne">
                 Technical info
               </button>
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapseOneTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
                 Weight (kg)
                 <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="60"
@@ -255,32 +261,40 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                data-bs-target="#flush-collapseTwoTwo" aria-expanded="false" aria-controls="flush-collapseTwoTwo">
                 Accordion Item #2
               </button>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
-                filled with some actual content.</div>
+            <div id="flush-collapseTwoTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                demonstrate the
+                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                imagine this being
+                filled with some actual content.
+              </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                data-bs-target="#flush-collapseThreeTwo" aria-expanded="false" aria-controls="flush-collapseThree">
                 Accordion Item #3
               </button>
             </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-                happening here in terms of content, but just filling up the space to make it look, at least at first
-                glance, a bit more representative of how this would look in a real-world application.</div>
+            <div id="flush-collapseThreeTwo" class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                demonstrate the
+                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing
+                more exciting
+                happening here in terms of content, but just filling up the space to make it look, at
+                least at first
+                glance, a bit more representative of how this would look in a real-world application.
+              </div>
             </div>
           </div>
         </div>
-      </div><!-- //accordion second dog-->
+      </div><!--accodion end-->
     </div><!-- //.row -->
   </div><!-- //.container-fluid -->
   <hr>
@@ -292,12 +306,9 @@
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#dogAccordion3" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#dogAccordion3" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#dogAccordion3" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#dogAccordion3" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#dogAccordion3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#dogAccordion3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#dogAccordion3" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -313,13 +324,11 @@
               <img src="img/dogs/Draxx2-sml.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#dogAccordion3"
-            data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#dogAccordion3" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#dogAccordion3"
-            data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#dogAccordion3" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -330,11 +339,12 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                data-bs-target="#flush-collapseOneThree" aria-expanded="false" aria-controls="flush-collapseOneThree">
                 Technical info
               </button>
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapseOneThree" class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
                 Weight (kg)
                 <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="60"
@@ -360,28 +370,38 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                data-bs-target="#flush-collapseTwoThree" aria-expanded="false" aria-controls="flush-collapseTwoThree">
                 Accordion Item #2
               </button>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
-                filled with some actual content.</div>
+            <div id="flush-collapseTwoThree" class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                demonstrate the
+                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                imagine this being
+                filled with some actual content.
+              </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                data-bs-target="#flush-collapseThreeThree" aria-expanded="false"
+                aria-controls="flush-collapseThreeThree">
                 Accordion Item #3
               </button>
             </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-                happening here in terms of content, but just filling up the space to make it look, at least at first
-                glance, a bit more representative of how this would look in a real-world application.</div>
+            <div id="flush-collapseThreeThree" class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                demonstrate the
+                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing
+                more exciting
+                happening here in terms of content, but just filling up the space to make it look, at
+                least at first
+                glance, a bit more representative of how this would look in a real-world application.
+              </div>
             </div>
           </div>
         </div>
@@ -397,12 +417,9 @@
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#dogAccordion4" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#dogAccordion4" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#dogAccordion4" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#dogAccordion4" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#dogAccordion4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#dogAccordion4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#dogAccordion4" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -418,13 +435,11 @@
               <img src="img/dogs/louii3.png" class="d-block w-100" alt="...">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#dogAccordion4"
-            data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#dogAccordion4" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#dogAccordion4"
-            data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#dogAccordion4" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -435,40 +450,50 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                data-bs-target="#flush-collapseOneFour" aria-expanded="false" aria-controls="flush-collapseOneFour">
                 Accordion Item #1
               </button>
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            <div id="flush-collapseOneFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                demonstrate the
+                <code>.accordion-flush</code> class. This is the first item's accordion body.
+              </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                data-bs-target="#flush-collapseTwoFour" aria-expanded="false" aria-controls="flush-collapseTwoFour">
                 Accordion Item #2
               </button>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
-                filled with some actual content.</div>
+            <div id="flush-collapseTwoFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                demonstrate the
+                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                imagine this being
+                filled with some actual content.
+              </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                data-bs-target="#flush-collapseThreeFour" aria-expanded="false" aria-controls="flush-collapseThreeFour">
                 Accordion Item #3
               </button>
             </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-                happening here in terms of content, but just filling up the space to make it look, at least at first
-                glance, a bit more representative of how this would look in a real-world application.</div>
+            <div id="flush-collapseThreeFour" class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                demonstrate the
+                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing
+                more exciting
+                happening here in terms of content, but just filling up the space to make it look, at
+                least at first
+                glance, a bit more representative of how this would look in a real-world application.
+              </div>
             </div>
           </div>
         </div>
